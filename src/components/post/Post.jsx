@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Post.css";
+import { Link } from 'react-router-dom';
 export default function Post() {
     return (
         <div className='post'>
@@ -13,7 +14,7 @@ export default function Post() {
                <span className="postCat">DBMS</span>
            </div>
            <span className="postTitle">
-               TITLE
+           <Link to="/post/7" className='link' style={{background:"none"}}>TITLE</Link>
            </span>
            <hr />
            <span className="postDate">1 hr ago</span>
